@@ -1,0 +1,450 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+button :hover{
+    background-color: darkred;
+}
+
+/*Nav-bar*/
+.nav-bar{
+    display: flex;
+    background-color: white;
+    justify-content: space-between;
+    padding: 15px 30px;
+    align-items: center;
+
+}
+
+.middle-nav ul{
+    display: flex;
+    list-style: none;
+    transition: all 0.1s ease;
+}
+
+.middle-nav a{
+    display: inline-block;
+    padding: 15px;
+    text-decoration: none;
+    font-weight: 800;
+    color: black;
+}
+
+.middle-nav :hover{
+    color: red;
+}
+
+.right-nav{
+    display: flex;
+}
+
+.menu-bar{
+    display: none;
+}
+
+button{
+    border: none;
+    background-color: red;
+    color: white;
+    font-size: 15px;
+    padding: 10px;
+    height: 35px;
+    border-radius: 5px;
+    transition: all 0.5s ease;
+}
+
+
+
+/*Section-1*/
+#sec-1{
+    background-image: url(images/bg.png);
+    background-size: cover;
+    background-position: center;
+    height: 500px;
+    padding: 60px;
+    color: white;
+}
+
+#sec-1 h1{
+    font-size: 40px;
+    margin-top: 60px;
+}
+
+#sec-1 p{
+    margin-top: 15px;
+    font-size: 25pxpx ;
+    margin-bottom: 10px;
+}
+
+#sec-1 button{
+    margin-top: 20px;
+}
+
+/*Section-2*/
+.main-heading{
+    text-align: center;
+    margin-top: 20px;
+}
+
+.main-heading h1{
+    margin-bottom: 5px;
+}
+
+.line{
+    background-color: red;
+    width: 150px;
+    height: 3px;
+    flex-shrink: 0;
+    margin: 0 auto;
+    border-radius: 25px;
+
+}
+
+.main-heading p{
+    margin-top:10px;
+    font-weight: 600;
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.about{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    padding: 20px 50px;
+    margin-top: 10px;
+}
+
+.about-sub #descript{
+    font-size: small;
+    background-color: red;
+    color: white;
+    width: 200px;
+    padding:3px;
+    border-radius: 10px ;
+}
+
+.about-sub h1{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 30px;
+}
+
+.about-sub #sub-content{
+    font-weight: 500;
+    font-size: 20px;
+}
+
+.about-sub button{
+    margin-top: 20px;
+}
+
+#sec-3 .main-heading p{
+    color: red;
+    font-size: small;
+}
+
+.logs{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 5px;
+    padding: 30px;
+    margin-left: 40px;
+    align-content: center;
+    justify-content: center;
+    flex-shrink: 0;
+    
+}
+
+.logs img{
+    width: 350px;
+}
+
+.log-sub p{
+    margin-top: 15px;
+    text-align: justify;
+}
+
+.log-sub a{
+    text-decoration: none;
+    color: red;
+
+}
+
+.log-sub a:hover{
+    color: darkred;
+}
+
+#sec-4{
+    background-color: #FFBF14;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 50px;
+    margin-top: 15px;
+}
+
+#sec-5{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.ad-sub{
+    display: flex;
+    flex-direction: column;
+}
+
+.ad-sub p{
+    font-weight: 530;
+}
+
+.wcu{
+    margin-left: 50px;
+}
+
+.wcu-heading{
+    margin: 25px 30px;
+}
+.wcu-1{
+    display: flex;
+    padding: 10px;
+    margin: 0 25px;
+    font-size: 16px;
+}
+
+.wcu-1 img{
+    width: 50px;
+    margin-right: 15px;
+}
+
+.request-quote{
+    margin-left: 70px;
+}
+
+.request-heading{
+    margin: 25px 30px;
+}
+
+.request-inputs form input{
+    width: 230px;
+    border-radius: 5px;
+    border: 1px solid;
+    padding: 10px;
+    margin-top: 20px;
+    margin-left: 5px;
+    
+}
+
+.request-inputs .left-input{
+    margin-right: 30px;
+
+
+}
+
+textarea{
+    margin-top: 20px;
+    width: 480px;
+    height: 150px;
+    border-radius: 10px;
+    padding: 12px;
+}
+
+.request-inputs form button{
+    margin-top: 10px;
+    height: 30px;
+    width: 100px;
+    padding: 5px;
+}
+
+.footer-wrapper{
+    background-color: black;
+}
+
+.footer{
+    /*background-color: #000000;*/
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    color: white;
+    padding: 50px 70px;
+    gap: 30px;
+
+    
+}
+
+.about-us h2{
+    margin-bottom: 20px;
+    font-weight: 400;
+}
+
+.quick-links{
+    margin-left: 40px;
+}
+
+.quick-links h2{
+    margin-bottom: 20px;
+    font-weight: 400;
+}
+
+.footer .quick-links ul li {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+}
+
+.footer .quick-links ul li a{
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    padding: 6px;
+    
+}
+
+.photo-gallaries{
+    margin-right: 40px;
+}
+
+.gallary-heading h2{
+     margin-bottom: 20px;
+     font-weight: 400;
+}
+
+.gallary-img{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+}
+
+.news-sub h2{
+   margin-bottom: 20px;
+   font-weight: 400;
+}
+
+.news-input form input{
+    width: 230px;
+    border-radius: 5px;
+    border: 1px solid  white;
+    padding: 10px;
+    margin-top: 20px;
+    margin-left: 5px;
+    background-color: black;
+}
+
+.news-input form button{
+    margin-top: 10px;
+    height: 30px;
+    width: 100px;
+    padding: 5px;
+ 
+}
+
+.copy-right {
+    text-align: center;
+    color: white;
+    padding-bottom: 20px;
+
+    
+}
+
+/*media query for mobile phone*/
+
+@media screen and (max-width: 767px) {
+    .nav-bar .middle-nav{
+        display: none;
+    }
+
+    #rnav-btn{
+        display: none;
+    }
+
+    .menu-bar{
+        display: block;
+    }
+     .main-heading{
+        text-align: center;
+        justify-content: center;
+     }
+
+     .about{
+        display: grid;
+        grid-template-columns: 1fr;
+        text-align: center;
+        justify-content: center;
+    }
+
+    .about-sub #descript{
+        text-align: center;
+    }
+
+    .about-sub{
+        text-align: center;
+        justify-content: center;
+    }
+
+    .logs{
+        display: grid;
+        grid-template-columns: 1fr;
+        text-align: center;
+        gap: 30px;
+        justify-content: center;
+    }
+
+    .log-sub p{
+        text-align: center;
+        font-size: 20px;
+    }
+
+    .log-img img{
+        width: 500px;
+    }
+
+    #sec-4{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    #sec-4 .ad-btn{
+        margin-top: 10px;
+    }
+
+    #sec-5{
+        display: grid;
+        grid-template-columns: 1fr;
+        text-align: center ;
+        justify-content: center;
+    }
+
+    #sec-5 .wcu .wcu-1{
+        text-align: justify;
+        justify-content: center;
+        font-size: 20px;
+        
+    }
+
+    .footer{
+        display: grid;
+        grid-template-columns: 1fr;
+        text-align: center;
+        font-size: 20px;
+    }
+
+    .gallary-img{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    .gallary-img img{
+        width: 400px;
+    }
+
+    n
+
+    .news-input form{
+        display: flex; 
+        flex-direction: column;
+    }
+
+
+    
+}
